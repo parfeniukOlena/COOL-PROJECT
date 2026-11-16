@@ -11,39 +11,60 @@
 <body>
     <header>
         <div>
-            <img src="./images/logo 1.webp" alt="Logo">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">How it’s made?</a></li>
-                <li><a href="#">Our products</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+            <div class="menu">
+                <div class="logo">
+                    <img src="./images/logo 1.webp" alt="Logo">
+                </div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">How it’s made?</a></li>
+                    <li><a href="#">Our products</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                
+            </div>
             <button id="openbtn">Buy now</button>
-
             <div id="modal" class="modal">
                 <button id="closebtn">X</button>
-                <h3>MADE WITH PASSION</h3>
-                <h2>BUY NOW</h2>
-                <p>Choose your treat. We’ll call to confirm.</p>
-                <form>
-                    <div>
-                        <p>Choose your treat</p>
-                        <img src="./images/icecream.webp" alt="Ice Cream" width="104px" height="104px">
-                        <img src="./images/ice-latte.webp" alt="Ice Coffee" width="104px" height="104px">
-                        <img src="./images/frapuccino.webp" alt="Frapuccino" width="104px" height="104px">
-                        <p>Ice cream · Quantity</p>
-                    </div>
+                <div class="main-container">
+                    <h3>MADE WITH PASSION</h3>
+                    <h2>BUY NOW</h2>
+                    <p>Choose your treat. We’ll call to confirm.</p>
+                    <form>
+                        <div class="form">
+                            <div class="treats">
+                                <p>Choose your treat</p>
+                                <div class="images">
+                                    <input type="checkbox" name="treat" id="icecream" value="icecream">
+                                    <label for="icecream">
+                                        <img src="./images/icecream.webp" alt="Ice Cream" width="104px" height="104px">
+                                    </label>
+                                    <input type="checkbox" name="treat" id="icelatte" value="icelatte">
+                                    <label for="icelatte">
+                                        <img src="./images/ice-latte.webp" alt="Ice Coffee" width="104px" height="104px">
+                                    </label>
+                                    <input type="checkbox" name="treat" id="frapuccino" value="frapuccino">
+                                    <label for="frapuccino">
+                                        <img src="./images/frapuccino.webp" alt="Frapuccino" width="104px" height="104px">
+                                    </label>
+                                </div>
+                                <p>Ice cream · Quantity</p>
+                            </div>
+                            <div class="fields">
+                                <label for="name">Name *</label>
+                                <input type="text" id="name" placeholder="Your name" required>
+                                <label for="phone">Phone *</label>
+                                <input type="tel" id="phone" placeholder="+1 (___) ___-____" required>
 
-                    <label for="name">Name *</label>
-                    <input type="text" id="name" placeholder="Your name" required>
-                    <label for="phone"></label>Phone *</label>
-                    <input type="tel" id="phone" placeholder="+1 (___) ___-____" required>
-                    <label for="notes">Order notes (optional)</label>
-                    <textarea id="notes" placeholder="Flavors, pickup time or special requests"></textarea>
-                    <button type="submit">Send order</button>
-                    No payment now. We’ll confirm your order by phone.
-                </form>
+                            </div>
+                            <label for="notes">Order notes (optional)</label>
+                            <textarea id="notes" placeholder="Flavors, pickup time or special requests" rows="2" cols="10" ></textarea>
+                            <button type="submit">Send order</button>
+                            No payment now. We’ll confirm your order by phone.
+                        </div>
+                    </form>
+                </div>
             </div>
 
 
