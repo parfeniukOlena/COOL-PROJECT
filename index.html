@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -22,9 +24,9 @@
                     <li><a href="#">Our products</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
-                
+                <button id="openbtn">Buy now</button>
             </div>
-            <button id="openbtn">Buy now</button>
+
             <div id="modal" class="modal">
                 <button id="closebtn">X</button>
                 <div class="main-container">
@@ -38,15 +40,15 @@
                                 <div class="images">
                                     <input type="checkbox" name="treat" id="icecream" value="icecream">
                                     <label for="icecream">
-                                        <img src="./images/icecream.webp" alt="Ice Cream" width="104px" height="104px">
+                                        <img src="./images/icecream.webp" alt="Ice Cream" width="104px" height="104px" class="active">
                                     </label>
-                                    <input type="checkbox" name="treat" id="icelatte" value="icelatte">
+                                    <input type="checkbox" name="treat" id="icelatte" value="icelatte" class="active">
                                     <label for="icelatte">
-                                        <img src="./images/ice-latte.webp" alt="Ice Coffee" width="104px" height="104px">
+                                        <img src="./images/ice-latte.webp" alt="Ice Coffee" width="104px" height="104px" class="active1">
                                     </label>
                                     <input type="checkbox" name="treat" id="frapuccino" value="frapuccino">
                                     <label for="frapuccino">
-                                        <img src="./images/frapuccino.webp" alt="Frapuccino" width="104px" height="104px">
+                                        <img src="./images/frapuccino.webp" alt="Frapuccino" width="104px" height="104px" class="active2">
                                     </label>
                                 </div>
                                 <p>Ice cream · Quantity</p>
@@ -95,24 +97,29 @@
         </section>
     </header>
     <main>
-        <section>
+        <section class="main">
             <h3>100% natural</h3>
             <h2>products</h2>
-            <article>
-                <h3>ice cream</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et</p>
-            </article>
-            <article>
-                <h3>ice coffee</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et</p>
-            </article>
-            <article>
-                <h3>milkshakes</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et</p>
-            </article>
+            <div class="drinks">
+                <article class="article1">
+                    <img src="./images/icecream.webp" alt="Ice Cream">
+                    <h3>ice cream</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                        et</p>
+                </article>
+                <article class="article2">
+                    <img src="./images/ice-latte.webp" alt="Ice Latte">
+                    <h3>ice coffee</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                        et</p>
+                </article>
+                <article class="article3">
+                    <img src="./images/frapuccino.webp" alt="Frapuccino">
+                    <h3>milkshakes</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                        et</p>
+                </article>
+            </div>
         </section>
 
     </main>
